@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amzona — Shop Everything</title>
+  <link rel="stylesheet" href="room.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="room.html" class="logo-link"><img class="logo" src="logo.svg" alt="amzona logo"></a>
+
+    <div class="search">
+      <input type="text" placeholder="Search products...">
+      <button type="button" aria-label="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <div class="right">
+      <div class="orders">
+        <span class="line-one">Returns</span>
+        <span class="line-two">& Orders</span>
+      </div>
+
+      <div class="basket">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+        <span class="cart">Cart</span>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul><a href="#" data-filter="all" class="active">All Products</a></ul>
+    <ul><a href="#" data-filter="clothing">Clothing</a></ul>
+    <ul><a href="#" data-filter="others">Others</a></ul>
+    <ul><a href="about.html">About the Developer</a></ul>
+    <ul><a href="login.html">Login</a></ul>
+  </nav>
+
+  <section class="hero-banner">
+    <h1>Everything you need, delivered fast.</h1>
+    <p>A front-end e-commerce practice project — browse products, add to cart, and check out the flow. This is a learning project, not a real store.</p>
+  </section>
+
+  <div class="parent">
+    <div class="continer">
+
+      <div class="card" data-category="others">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-5%</div>
+        <img class="image" src="https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Perfume bottle">
+        <h3 class="title">Captivating fragrance for an unforgettable presence.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(87)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$39</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="clothing">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-20%</div>
+        <img class="image" src="https://images.pexels.com/photos/16581246/pexels-photo-16581246.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Teen hooded sweatshirt">
+        <h3 class="title">Boys' Teen Fashion Graphic Hooded Zip-Up Sweatshirt, for Teenager.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(55)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$45</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="clothing">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-35%</div>
+        <img class="image" src="https://images.pexels.com/photos/907863/pexels-photo-907863.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Warm hoodie">
+        <h3 class="title">Warm hoodie for cold weather comfort.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(99)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$50</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="others">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-40%</div>
+        <img class="image" src="https://images.pexels.com/photos/16739804/pexels-photo-16739804.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Men's analog watch">
+        <h3 class="title">Mini Focus Casual Watch For Men Analog Metal - MF0188G.02.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(72)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$42</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="others">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-10%</div>
+        <img class="image" src="https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Laptop backpack">
+        <h3 class="title">Gang Bag Case Laptop Backpack, Waterproof Backpack, Large Capacity Backpack for.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(60)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$48</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="clothing">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-25%</div>
+        <img class="image" src="https://images.pexels.com/photos/2975405/pexels-photo-2975405.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fashionable outfit">
+        <h3 class="title">Perfect outfit for a fashionable appearance.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(90)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$150</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="others">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-15%</div>
+        <img class="image" src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Running shoes">
+        <h3 class="title">Comfortable running shoes built for daily workouts.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(41)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$38</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="clothing">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-30%</div>
+        <img class="image" src="https://images.pexels.com/photos/8217536/pexels-photo-8217536.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Training t-shirt">
+        <h3 class="title">Lightweight training t-shirt for active performance.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(29)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$55</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="clothing">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-20%</div>
+        <img class="image" src="https://images.pexels.com/photos/8217536/pexels-photo-8217536.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Basic t-shirt">
+        <h3 class="title">Basic t-shirt for everyday style.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(80)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$35</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="clothing">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-28%</div>
+        <img class="image" src="https://images.pexels.com/photos/8217536/pexels-photo-8217536.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Soft casual t-shirt">
+        <h3 class="title">Soft casual t-shirts for daily wear.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(66)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$44</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="clothing">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-15%</div>
+        <img class="image" src="https://images.pexels.com/photos/10971114/pexels-photo-10971114.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Premium athletic gym hoodie">
+        <h3 class="title">Premium Athletic Gym Hoodie - Breathable & Warm.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(120)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$65</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="clothing">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-30%</div>
+        <img class="image" src="https://images.pexels.com/photos/1480691/pexels-photo-1480691.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Streetwear sweatshirt">
+        <h3 class="title">Casual Streetwear Cotton Sweatshirt for Daily Wear.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(85)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$49</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="clothing">
+        <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+        <div class="discount">-10%</div>
+        <img class="image" src="https://images.pexels.com/photos/8217536/pexels-photo-8217536.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dry-fit training t-shirt">
+        <h3 class="title">Dry-Fit Training T-Shirt - Perfect for Active Workouts.</h3>
+        <div class="rating-box">
+          <img class="stars" src="https://static.vecteezy.com/system/resources/previews/026/322/619/non_2x/five-star-rating-icon-vector.jpg" alt="rating">
+          <span class="count">(44)</span>
+        </div>
+        <p class="stock"><i class="fa-solid fa-check"></i> In Stock</p>
+        <p class="price">$28</p>
+        <p class="delivery">Free delivery tomorrow</p>
+        <select class="num"><option>1</option><option>2</option><option>3</option></select>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="buy">Buy Now</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 amzona — a front-end practice project by <a href="about.html">Abdelwahab Atef</a></p>
+  </footer>
+
+  <script src="room.js"></script>
+</body>
+</html>
